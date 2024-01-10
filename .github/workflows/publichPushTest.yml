@@ -30,9 +30,7 @@ jobs:
         with:
           images: ghcr.io/pigeonport/${{ github.repository }}
           tags: |
-            type=ref,event=branch
             type=ref,event=tag
-            type=ref,event=pr
             type=raw,value=latest
 
       - name: display Infos
